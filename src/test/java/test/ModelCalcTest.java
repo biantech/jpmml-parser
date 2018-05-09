@@ -7,10 +7,11 @@ import java.util.Map;
 import java.util.Set;
 
 import org.dmg.pmml.FieldName;
-import org.junit.jupiter.api.Test;
+
 
 import com.biantech.jpmml.parser.PmmlCalc;
 import com.biantech.jpmml.parser.PmmlInvoker;
+import org.junit.Test;
 
 class ModelCalcTest {
 

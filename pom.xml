@@ -37,7 +37,7 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
-                            <finalName>example-${project.version}</finalName>
+                            <finalName>jpmml-parser-${project.version}</finalName>
                             <artifactSet>
                                 <excludes>
                                     <exclude>oro*</exclude>
