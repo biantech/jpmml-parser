@@ -1,5 +1,4 @@
 # jpmml-parser
-# pmml-parser
 ## JPMML解析pmml 模型的例子
 - 打包方式
   mvn package 
