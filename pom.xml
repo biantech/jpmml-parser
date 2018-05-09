@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>jpmml-parser</groupId>
+   <artifactId>jpmml-parser</artifactId>
+   <version>1</version>
+   <inceptionYear>2008</inceptionYear>
+   <properties>
+         <scala.version>2.10.6</scala.version>
+         <spark.version>1.6.0-cdh5.7.3</spark.version>
+   </properties>
+   <dependencies>
+     <dependency>
+         <groupId>org.jpmml</groupId>
+          <artifactId>pmml-evaluator</artifactId>
+          <version>1.3.7</version>
+     </dependency>
+     <dependency>
+       <groupId>junit</groupId>
+       <artifactId>junit</artifactId>
+       <version>4.10</version>
+       <scope>test</scope>
+     </dependency>
+   </dependencies>
+
+</project>
