@@ -7,4 +7,4 @@
 - 调用方式：
   java -jar pmml-parser-1.jar [pmml file] [model input args] <br/>
 - example：
-  java -jar pmml-parser-1.jar iris_rf.pmml irisv2.csv
+  java -jar pmml-parser-1.jar model_rf.pmml ir-data.csv
