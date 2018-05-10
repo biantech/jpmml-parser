@@ -1,0 +1,579 @@
+<?xml version='1.0'?>
+<PMML version='4.1'
+      xmlns='http://www.dmg.org/PMML-4_1'
+      xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<Header copyright='' description='Logit Model'>
+  <Application name='SPM' version='8.2.0.777'/>
+  <Timestamp>2018-03-09T14:09:25</Timestamp>
+</Header>
+
+<DataDictionary numberOfFields='41'>
+  <DataField name='V12' optype='categorical' dataType='string'>
+    <Value value='00' property='valid' />
+    <Value value='01' property='valid' />
+    <Value value='02' property='valid' />
+    <Value value='04' property='valid' />
+    <Value value='06' property='valid' />
+    <Value value='14' property='valid' />
+    <Value value='36' property='valid' />
+    <Value value='41' property='valid' />
+    <Value value='51' property='valid' />
+    <Value value='53' property='valid' />
+    <Value value='54' property='valid' />
+    <Value value='55' property='valid' />
+    <Value value='56' property='valid' />
+    <Value value='57' property='valid' />
+    <Value value='58' property='valid' />
+    <Value value='61' property='valid' />
+    <Value value='62' property='valid' />
+    <Value value='65' property='valid' />
+    <Value value='71' property='valid' />
+    <Value value='72' property='valid' />
+    <Value value='73' property='valid' />
+    <Value value='75' property='valid' />
+    <Value value='76' property='valid' />
+    <Value value='85' property='valid' />
+    <Value value='86' property='valid' />
+    <Value value='88' property='valid' />
+    <Value value='89' property='valid' />
+    <Value value='91' property='valid' />
+    <Value value='96' property='valid' />
+    <Value value='F1' property='valid' />
+    <Value value='N7' property='valid' />
+    </DataField>
+  <DataField name='V23' optype='categorical' dataType='string'>
+    <Value value='A' property='valid' />
+    <Value value='B' property='valid' />
+    <Value value='C' property='valid' />
+    <Value value='D' property='valid' />
+    <Value value='E' property='valid' />
+    <Value value='Z' property='valid' />
+    </DataField>
+  <DataField name='V38' optype='categorical' dataType='string'>
+    <Value value='D' property='valid' />
+    <Value value='E' property='valid' />
+    <Value value='EMPTY' property='valid' />
+    <Value value='J' property='valid' />
+    <Value value='K' property='valid' />
+    <Value value='L' property='valid' />
+    <Value value='N' property='valid' />
+    <Value value='U' property='valid' />
+    <Value value='W' property='valid' />
+    <Value value='X' property='valid' />
+    </DataField>
+  <DataField name='V75' optype='categorical' dataType='string'>
+    <Value value='N' property='valid' />
+    <Value value='Y' property='valid' />
+    </DataField>
+  <DataField name='V106' optype='categorical' dataType='string'>
+    <Value value='00' property='valid' />
+    <Value value='01' property='valid' />
+    <Value value='02' property='valid' />
+    <Value value='04' property='valid' />
+    <Value value='05' property='valid' />
+    <Value value='06' property='valid' />
+    <Value value='14' property='valid' />
+    <Value value='21' property='valid' />
+    <Value value='22' property='valid' />
+    <Value value='24' property='valid' />
+    <Value value='32' property='valid' />
+    <Value value='36' property='valid' />
+    <Value value='40' property='valid' />
+    <Value value='41' property='valid' />
+    <Value value='51' property='valid' />
+    <Value value='53' property='valid' />
+    <Value value='54' property='valid' />
+    <Value value='55' property='valid' />
+    <Value value='56' property='valid' />
+    <Value value='57' property='valid' />
+    <Value value='58' property='valid' />
+    <Value value='60' property='valid' />
+    <Value value='61' property='valid' />
+    <Value value='62' property='valid' />
+    <Value value='65' property='valid' />
+    <Value value='71' property='valid' />
+    <Value value='72' property='valid' />
+    <Value value='73' property='valid' />
+    <Value value='75' property='valid' />
+    <Value value='76' property='valid' />
+    <Value value='85' property='valid' />
+    <Value value='86' property='valid' />
+    <Value value='88' property='valid' />
+    <Value value='89' property='valid' />
+    <Value value='91' property='valid' />
+    <Value value='96' property='valid' />
+    <Value value='EMPTY' property='valid' />
+    <Value value='F1' property='valid' />
+    <Value value='N7' property='valid' />
+    <Value value='ZZ' property='valid' />
+    </DataField>
+  <DataField name='V107' optype='categorical' dataType='string'>
+    <Value value='00' property='valid' />
+    <Value value='01' property='valid' />
+    <Value value='02' property='valid' />
+    <Value value='04' property='valid' />
+    <Value value='05' property='valid' />
+    <Value value='06' property='valid' />
+    <Value value='14' property='valid' />
+    <Value value='17' property='valid' />
+    <Value value='21' property='valid' />
+    <Value value='22' property='valid' />
+    <Value value='24' property='valid' />
+    <Value value='32' property='valid' />
+    <Value value='36' property='valid' />
+    <Value value='40' property='valid' />
+    <Value value='41' property='valid' />
+    <Value value='43' property='valid' />
+    <Value value='51' property='valid' />
+    <Value value='53' property='valid' />
+    <Value value='54' property='valid' />
+    <Value value='55' property='valid' />
+    <Value value='56' property='valid' />
+    <Value value='57' property='valid' />
+    <Value value='58' property='valid' />
+    <Value value='60' property='valid' />
+    <Value value='61' property='valid' />
+    <Value value='62' property='valid' />
+    <Value value='63' property='valid' />
+    <Value value='65' property='valid' />
+    <Value value='71' property='valid' />
+    <Value value='72' property='valid' />
+    <Value value='73' property='valid' />
+    <Value value='75' property='valid' />
+    <Value value='76' property='valid' />
+    <Value value='85' property='valid' />
+    <Value value='86' property='valid' />
+    <Value value='88' property='valid' />
+    <Value value='89' property='valid' />
+    <Value value='91' property='valid' />
+    <Value value='96' property='valid' />
+    <Value value='EMPTY' property='valid' />
+    <Value value='F1' property='valid' />
+    <Value value='N7' property='valid' />
+    <Value value='ZZ' property='valid' />
+    </DataField>
+  <DataField name='V118' optype='categorical' dataType='string'>
+    <Value value='A' property='valid' />
+    <Value value='C' property='valid' />
+    <Value value='EMPTY' property='valid' />
+    <Value value='I' property='valid' />
+    <Value value='R' property='valid' />
+    </DataField>
+  <DataField name='V119' optype='categorical' dataType='string'>
+    <Value value='A' property='valid' />
+    <Value value='C' property='valid' />
+    <Value value='EMPTY' property='valid' />
+    <Value value='I' property='valid' />
+    <Value value='R' property='valid' />
+    </DataField>
+  <DataField name='V120' optype='categorical' dataType='string'>
+    <Value value='A' property='valid' />
+    <Value value='C' property='valid' />
+    <Value value='EMPTY' property='valid' />
+    <Value value='I' property='valid' />
+    <Value value='R' property='valid' />
+    </DataField>
+  <DataField name='V139' optype='categorical' dataType='string'>
+    <Value value='A' property='valid' />
+    <Value value='B' property='valid' />
+    <Value value='C' property='valid' />
+    <Value value='D' property='valid' />
+    <Value value='E' property='valid' />
+    <Value value='EMPTY' property='valid' />
+    <Value value='I' property='valid' />
+    <Value value='J' property='valid' />
+    <Value value='M' property='valid' />
+    <Value value='V' property='valid' />
+    </DataField>
+  <DataField name='V140' optype='categorical' dataType='string'>
+    <Value value='A' property='valid' />
+    <Value value='C' property='valid' />
+    <Value value='D' property='valid' />
+    <Value value='E' property='valid' />
+    <Value value='EMPTY' property='valid' />
+    <Value value='I' property='valid' />
+    <Value value='J' property='valid' />
+    <Value value='M' property='valid' />
+    <Value value='V' property='valid' />
+    </DataField>
+  <DataField name='V141' optype='categorical' dataType='string'>
+    <Value value='A' property='valid' />
+    <Value value='C' property='valid' />
+    <Value value='D' property='valid' />
+    <Value value='E' property='valid' />
+    <Value value='EMPTY' property='valid' />
+    <Value value='I' property='valid' />
+    <Value value='J' property='valid' />
+    <Value value='M' property='valid' />
+    <Value value='V' property='valid' />
+    </DataField>
+  <DataField name='V184' optype='categorical' dataType='string'>
+    <Value value='N' property='valid' />
+    <Value value='Y' property='valid' />
+    </DataField>
+  <DataField name='V190' optype='categorical' dataType='string'>
+    <Value value='N' property='valid' />
+    <Value value='Y' property='valid' />
+    </DataField>
+  <DataField name='TARGET' optype='categorical' dataType='float'>
+    <Value value='0' property='valid' />
+    <Value value='1' property='valid' />
+    </DataField>
+  <DataField name='V195_2' optype='categorical' dataType='string'>
+    <Value value='0' property='valid' />
+    <Value value='1157' property='valid' />
+    <Value value='1322' property='valid' />
+    <Value value='13227' property='valid' />
+    <Value value='132270' property='valid' />
+    <Value value='1323' property='valid' />
+    <Value value='1653' property='valid' />
+    <Value value='16534' property='valid' />
+    <Value value='1654' property='valid' />
+    <Value value='1819' property='valid' />
+    <Value value='18755' property='valid' />
+    <Value value='18828' property='valid' />
+    <Value value='18832' property='valid' />
+    <Value value='18861' property='valid' />
+    <Value value='1984' property='valid' />
+    <Value value='19841' property='valid' />
+    <Value value='2314' property='valid' />
+    <Value value='2645' property='valid' />
+    <Value value='2646' property='valid' />
+    <Value value='2976' property='valid' />
+    <Value value='33068' property='valid' />
+    <Value value='3307' property='valid' />
+    <Value value='3637' property='valid' />
+    <Value value='3968' property='valid' />
+    <Value value='54719' property='valid' />
+    <Value value='57359' property='valid' />
+    <Value value='615' property='valid' />
+    <Value value='661' property='valid' />
+    <Value value='66135' property='valid' />
+    <Value value='6614' property='valid' />
+    <Value value='7' property='valid' />
+    <Value value='827' property='valid' />
+    <Value value='992' property='valid' />
+    <Value value='9920' property='valid' />
+    <Value value='other' property='valid' />
+    </DataField>
+  <DataField name='V3' optype='continuous' dataType='float' />
+  <DataField name='V6' optype='continuous' dataType='float' />
+  <DataField name='V7' optype='continuous' dataType='float' />
+  <DataField name='V27' optype='continuous' dataType='float' />
+  <DataField name='V32' optype='continuous' dataType='float' />
+  <DataField name='V46' optype='continuous' dataType='float' />
+  <DataField name='V47' optype='continuous' dataType='float' />
+  <DataField name='V10' optype='continuous' dataType='float' />
+  <DataField name='V19' optype='continuous' dataType='float' />
+  <DataField name='V20' optype='continuous' dataType='float' />
+  <DataField name='V22' optype='continuous' dataType='float' />
+  <DataField name='V29' optype='continuous' dataType='float' />
+  <DataField name='V30' optype='continuous' dataType='float' />
+  <DataField name='V63' optype='continuous' dataType='float' />
+  <DataField name='V100' optype='continuous' dataType='float' />
+  <DataField name='V101' optype='continuous' dataType='float' />
+  <DataField name='V102' optype='continuous' dataType='float' />
+  <DataField name='V103' optype='continuous' dataType='float' />
+  <DataField name='V104' optype='continuous' dataType='float' />
+  <DataField name='V121' optype='continuous' dataType='float' />
+  <DataField name='V133' optype='continuous' dataType='float' />
+  <DataField name='V175' optype='continuous' dataType='float' />
+  <DataField name='V180' optype='continuous' dataType='float' />
+  <DataField name='V9_2' optype='continuous' dataType='float' />
+  <DataField name='V45_2' optype='continuous' dataType='float' />
+  </DataDictionary>
+
+<RegressionModel modelName='Logit_1'
+                 functionName='classification'
+                 algorithmName='Logit'
+                 modelType='logisticRegression'
+                 normalizationMethod='logit'>
+
+<MiningSchema>
+  <MiningField name='TARGET' usageType='predicted' />
+  <MiningField name='V12' usageType='active' />
+  <MiningField name='V23' usageType='active' />
+  <MiningField name='V38' usageType='active' />
+  <MiningField name='V75' usageType='active' />
+  <MiningField name='V106' usageType='active' />
+  <MiningField name='V107' usageType='active' />
+  <MiningField name='V118' usageType='active' />
+  <MiningField name='V119' usageType='active' />
+  <MiningField name='V120' usageType='active' />
+  <MiningField name='V139' usageType='active' />
+  <MiningField name='V140' usageType='active' />
+  <MiningField name='V141' usageType='active' />
+  <MiningField name='V184' usageType='active' />
+  <MiningField name='V190' usageType='active' />
+  <MiningField name='V195_2' usageType='active' />
+  <MiningField name='V3' usageType='active' />
+  <MiningField name='V6' usageType='active' />
+  <MiningField name='V7' usageType='active' />
+  <MiningField name='V27' usageType='active' />
+  <MiningField name='V32' usageType='active' />
+  <MiningField name='V46' usageType='active' />
+  <MiningField name='V47' usageType='active' />
+  <MiningField name='V10' usageType='active' />
+  <MiningField name='V19' usageType='active' />
+  <MiningField name='V20' usageType='active' />
+  <MiningField name='V22' usageType='active' />
+  <MiningField name='V29' usageType='active' />
+  <MiningField name='V30' usageType='active' />
+  <MiningField name='V63' usageType='active' />
+  <MiningField name='V100' usageType='active' />
+  <MiningField name='V101' usageType='active' />
+  <MiningField name='V102' usageType='active' />
+  <MiningField name='V103' usageType='active' />
+  <MiningField name='V104' usageType='active' />
+  <MiningField name='V121' usageType='active' />
+  <MiningField name='V133' usageType='active' />
+  <MiningField name='V175' usageType='active' />
+  <MiningField name='V180' usageType='active' />
+  <MiningField name='V9_2' usageType='active' />
+  <MiningField name='V45_2' usageType='active' />
+  </MiningSchema>
+
+<Output>
+  <OutputField name='RESPONSE' optype='categorical' dataType='float'
+               targetField='TARGET' feature='predictedValue' />
+  <OutputField name='PROB_0' optype='continuous' dataType='double'
+               targetField='TARGET' feature='probability' value='0' />
+  <OutputField name='PROB_1' optype='continuous' dataType='double'
+               targetField='TARGET' feature='probability' value='1' />
+  </Output>
+
+<Targets>
+  <Target field='TARGET'>
+    <TargetValue value='0' />
+    <TargetValue value='1' />
+    </Target>
+
+  </Targets>
+
+<RegressionTable intercept="16328" targetCategory='1'>
+  <CategoricalPredictor name="V12$" value="00" coefficient="-5.55538" />
+  <CategoricalPredictor name="V12$" value="01" coefficient="-1.78013" />
+  <CategoricalPredictor name="V12$" value="02" coefficient="-2.67847" />
+  <CategoricalPredictor name="V12$" value="04" coefficient="-2.0852" />
+  <CategoricalPredictor name="V12$" value="06" coefficient="-14.5842" />
+  <CategoricalPredictor name="V12$" value="14" coefficient="-12.1775" />
+  <CategoricalPredictor name="V12$" value="36" coefficient="-1.17148" />
+  <CategoricalPredictor name="V12$" value="41" coefficient="-0.745145" />
+  <CategoricalPredictor name="V12$" value="51" coefficient="-2.2621" />
+  <CategoricalPredictor name="V12$" value="53" coefficient="-0.429967" />
+  <CategoricalPredictor name="V12$" value="54" coefficient="-3.06441" />
+  <CategoricalPredictor name="V12$" value="55" coefficient="-2.97264" />
+  <CategoricalPredictor name="V12$" value="56" coefficient="-12.3611" />
+  <CategoricalPredictor name="V12$" value="57" coefficient="-12.2414" />
+  <CategoricalPredictor name="V12$" value="58" coefficient="-3.05325" />
+  <CategoricalPredictor name="V12$" value="61" coefficient="-0.229972" />
+  <CategoricalPredictor name="V12$" value="62" coefficient="-1.31557" />
+  <CategoricalPredictor name="V12$" value="65" coefficient="-14.834" />
+  <CategoricalPredictor name="V12$" value="71" coefficient="-12.2076" />
+  <CategoricalPredictor name="V12$" value="72" coefficient="-9.75805" />
+  <CategoricalPredictor name="V12$" value="73" coefficient="-12.174" />
+  <CategoricalPredictor name="V12$" value="75" coefficient="-2.26471" />
+  <CategoricalPredictor name="V12$" value="76" coefficient="-11.8107" />
+  <CategoricalPredictor name="V12$" value="85" coefficient="-12.2161" />
+  <CategoricalPredictor name="V12$" value="86" coefficient="-8.7621" />
+  <CategoricalPredictor name="V12$" value="88" coefficient="-12.9083" />
+  <CategoricalPredictor name="V12$" value="89" coefficient="-2.22431" />
+  <CategoricalPredictor name="V12$" value="91" coefficient="-11.2172" />
+  <CategoricalPredictor name="V12$" value="96" coefficient="-0.728867" />
+  <CategoricalPredictor name="V12$" value="F1" coefficient="-0.875451" />
+  <CategoricalPredictor name="V23$" value="A" coefficient="0.607286" />
+  <CategoricalPredictor name="V23$" value="B" coefficient="0.424868" />
+  <CategoricalPredictor name="V23$" value="C" coefficient="1.20676" />
+  <CategoricalPredictor name="V23$" value="D" coefficient="1.68893" />
+  <CategoricalPredictor name="V23$" value="E" coefficient="1.38429" />
+  <CategoricalPredictor name="V38$" value="D" coefficient="-12.259" />
+  <CategoricalPredictor name="V38$" value="E" coefficient="-1.80051" />
+  <CategoricalPredictor name="V38$" value="EMPTY" coefficient="-4.07788" />
+  <CategoricalPredictor name="V38$" value="J" coefficient="-12.5223" />
+  <CategoricalPredictor name="V38$" value="K" coefficient="-1.6729" />
+  <CategoricalPredictor name="V38$" value="L" coefficient="-1.73305" />
+  <CategoricalPredictor name="V38$" value="N" coefficient="-4.50005" />
+  <CategoricalPredictor name="V38$" value="U" coefficient="-0.544802" />
+  <CategoricalPredictor name="V38$" value="W" coefficient="-1.36604" />
+  <CategoricalPredictor name="V75$" value="N" coefficient="-1.86725" />
+  <CategoricalPredictor name="V106$" value="00" coefficient="0.436464" />
+  <CategoricalPredictor name="V106$" value="01" coefficient="-1.37837" />
+  <CategoricalPredictor name="V106$" value="02" coefficient="0.101091" />
+  <CategoricalPredictor name="V106$" value="04" coefficient="-0.378713" />
+  <CategoricalPredictor name="V106$" value="05" coefficient="-7.05654" />
+  <CategoricalPredictor name="V106$" value="06" coefficient="-6.44572" />
+  <CategoricalPredictor name="V106$" value="14" coefficient="-4.1952" />
+  <CategoricalPredictor name="V106$" value="21" coefficient="-5.90539" />
+  <CategoricalPredictor name="V106$" value="22" coefficient="-5.26178" />
+  <CategoricalPredictor name="V106$" value="24" coefficient="-6.14077" />
+  <CategoricalPredictor name="V106$" value="32" coefficient="-5.84176" />
+  <CategoricalPredictor name="V106$" value="36" coefficient="-23.3009" />
+  <CategoricalPredictor name="V106$" value="40" coefficient="-10.7507" />
+  <CategoricalPredictor name="V106$" value="41" coefficient="0.848474" />
+  <CategoricalPredictor name="V106$" value="51" coefficient="1.43248" />
+  <CategoricalPredictor name="V106$" value="53" coefficient="1.34757" />
+  <CategoricalPredictor name="V106$" value="54" coefficient="1.47415" />
+  <CategoricalPredictor name="V106$" value="55" coefficient="-0.40431" />
+  <CategoricalPredictor name="V106$" value="56" coefficient="-9.18018" />
+  <CategoricalPredictor name="V106$" value="57" coefficient="-3.06487" />
+  <CategoricalPredictor name="V106$" value="58" coefficient="1.17474" />
+  <CategoricalPredictor name="V106$" value="60" coefficient="0.685542" />
+  <CategoricalPredictor name="V106$" value="61" coefficient="-10.6357" />
+  <CategoricalPredictor name="V106$" value="62" coefficient="-0.471844" />
+  <CategoricalPredictor name="V106$" value="65" coefficient="8.64573" />
+  <CategoricalPredictor name="V106$" value="71" coefficient="-6.66066" />
+  <CategoricalPredictor name="V106$" value="72" coefficient="-3.54709" />
+  <CategoricalPredictor name="V106$" value="73" coefficient="-3.09219" />
+  <CategoricalPredictor name="V106$" value="75" coefficient="-10.2178" />
+  <CategoricalPredictor name="V106$" value="76" coefficient="-4.23907" />
+  <CategoricalPredictor name="V106$" value="85" coefficient="-9.24557" />
+  <CategoricalPredictor name="V106$" value="86" coefficient="1.21135" />
+  <CategoricalPredictor name="V106$" value="88" coefficient="-5.60971" />
+  <CategoricalPredictor name="V106$" value="89" coefficient="0.75801" />
+  <CategoricalPredictor name="V106$" value="91" coefficient="-2.18153" />
+  <CategoricalPredictor name="V106$" value="96" coefficient="2.21938" />
+  <CategoricalPredictor name="V106$" value="EMPTY" coefficient="22020.2" />
+  <CategoricalPredictor name="V106$" value="F1" coefficient="0.703172" />
+  <CategoricalPredictor name="V106$" value="N7" coefficient="-4.29167" />
+  <CategoricalPredictor name="V107$" value="00" coefficient="8.08107" />
+  <CategoricalPredictor name="V107$" value="01" coefficient="10.3032" />
+  <CategoricalPredictor name="V107$" value="02" coefficient="8.62174" />
+  <CategoricalPredictor name="V107$" value="04" coefficient="8.72978" />
+  <CategoricalPredictor name="V107$" value="05" coefficient="-1.22813" />
+  <CategoricalPredictor name="V107$" value="06" coefficient="7.90156" />
+  <CategoricalPredictor name="V107$" value="14" coefficient="3.83953" />
+  <CategoricalPredictor name="V107$" value="17" coefficient="3.0465" />
+  <CategoricalPredictor name="V107$" value="21" coefficient="0.807339" />
+  <CategoricalPredictor name="V107$" value="22" coefficient="-2.15236" />
+  <CategoricalPredictor name="V107$" value="24" coefficient="0.504146" />
+  <CategoricalPredictor name="V107$" value="32" coefficient="0.790116" />
+  <CategoricalPredictor name="V107$" value="36" coefficient="20.1634" />
+  <CategoricalPredictor name="V107$" value="40" coefficient="-0.172327" />
+  <CategoricalPredictor name="V107$" value="41" coefficient="6.75613" />
+  <CategoricalPredictor name="V107$" value="43" coefficient="2.08567" />
+  <CategoricalPredictor name="V107$" value="51" coefficient="8.01438" />
+  <CategoricalPredictor name="V107$" value="53" coefficient="9.36379" />
+  <CategoricalPredictor name="V107$" value="54" coefficient="-0.703093" />
+  <CategoricalPredictor name="V107$" value="55" coefficient="7.54204" />
+  <CategoricalPredictor name="V107$" value="56" coefficient="1.79059" />
+  <CategoricalPredictor name="V107$" value="57" coefficient="1.89251" />
+  <CategoricalPredictor name="V107$" value="58" coefficient="8.87743" />
+  <CategoricalPredictor name="V107$" value="60" coefficient="1.58775" />
+  <CategoricalPredictor name="V107$" value="61" coefficient="-1.27381" />
+  <CategoricalPredictor name="V107$" value="62" coefficient="-3.96981" />
+  <CategoricalPredictor name="V107$" value="63" coefficient="1.92267" />
+  <CategoricalPredictor name="V107$" value="65" coefficient="7.17053" />
+  <CategoricalPredictor name="V107$" value="71" coefficient="-1.18126" />
+  <CategoricalPredictor name="V107$" value="72" coefficient="2.93656" />
+  <CategoricalPredictor name="V107$" value="73" coefficient="3.45046" />
+  <CategoricalPredictor name="V107$" value="75" coefficient="-0.0376216" />
+  <CategoricalPredictor name="V107$" value="76" coefficient="1.62789" />
+  <CategoricalPredictor name="V107$" value="85" coefficient="9.77629" />
+  <CategoricalPredictor name="V107$" value="86" coefficient="7.64916" />
+  <CategoricalPredictor name="V107$" value="88" coefficient="1.20725" />
+  <CategoricalPredictor name="V107$" value="89" coefficient="-5.99274" />
+  <CategoricalPredictor name="V107$" value="91" coefficient="4.10277" />
+  <CategoricalPredictor name="V107$" value="96" coefficient="-0.0603305" />
+  <CategoricalPredictor name="V107$" value="EMPTY" coefficient="31558.6" />
+  <CategoricalPredictor name="V107$" value="F1" coefficient="6.87224" />
+  <CategoricalPredictor name="V107$" value="N7" coefficient="2.17987" />
+  <CategoricalPredictor name="V118$" value="A" coefficient="7.89174" />
+  <CategoricalPredictor name="V118$" value="C" coefficient="7.29254" />
+  <CategoricalPredictor name="V118$" value="EMPTY" coefficient="17.6807" />
+  <CategoricalPredictor name="V118$" value="I" coefficient="9.25812" />
+  <CategoricalPredictor name="V119$" value="A" coefficient="-0.459333" />
+  <CategoricalPredictor name="V119$" value="C" coefficient="-3.48595" />
+  <CategoricalPredictor name="V119$" value="I" coefficient="-0.532413" />
+  <CategoricalPredictor name="V120$" value="A" coefficient="-0.468744" />
+  <CategoricalPredictor name="V120$" value="C" coefficient="-1.60714" />
+  <CategoricalPredictor name="V120$" value="EMPTY" coefficient="-0.86917" />
+  <CategoricalPredictor name="V120$" value="I" coefficient="-0.133759" />
+  <CategoricalPredictor name="V139$" value="A" coefficient="-6.82438" />
+  <CategoricalPredictor name="V139$" value="B" coefficient="0.38414" />
+  <CategoricalPredictor name="V139$" value="C" coefficient="0.441794" />
+  <CategoricalPredictor name="V139$" value="D" coefficient="-6.0407" />
+  <CategoricalPredictor name="V139$" value="E" coefficient="-6.57584" />
+  <CategoricalPredictor name="V139$" value="I" coefficient="-0.113938" />
+  <CategoricalPredictor name="V139$" value="J" coefficient="-5.12168" />
+  <CategoricalPredictor name="V139$" value="M" coefficient="0.614219" />
+  <CategoricalPredictor name="V140$" value="A" coefficient="2.44004" />
+  <CategoricalPredictor name="V140$" value="C" coefficient="0.841453" />
+  <CategoricalPredictor name="V140$" value="D" coefficient="-5.88309" />
+  <CategoricalPredictor name="V140$" value="E" coefficient="1.03472" />
+  <CategoricalPredictor name="V140$" value="I" coefficient="1.21447" />
+  <CategoricalPredictor name="V140$" value="J" coefficient="-3.69871" />
+  <CategoricalPredictor name="V140$" value="M" coefficient="0.188194" />
+  <CategoricalPredictor name="V141$" value="A" coefficient="1.58292" />
+  <CategoricalPredictor name="V141$" value="C" coefficient="0.674691" />
+  <CategoricalPredictor name="V141$" value="D" coefficient="-4.02503" />
+  <CategoricalPredictor name="V141$" value="E" coefficient="-0.883083" />
+  <CategoricalPredictor name="V141$" value="EMPTY" coefficient="82904.2" />
+  <CategoricalPredictor name="V141$" value="I" coefficient="0.953319" />
+  <CategoricalPredictor name="V141$" value="J" coefficient="-3.89357" />
+  <CategoricalPredictor name="V141$" value="M" coefficient="-0.26933" />
+  <CategoricalPredictor name="V184$" value="N" coefficient="-1.92976" />
+  <CategoricalPredictor name="V190$" value="N" coefficient="-0.116376" />
+  <CategoricalPredictor name="V195_2$" value="0" coefficient="0.471673" />
+  <CategoricalPredictor name="V195_2$" value="1157" coefficient="-6.72544" />
+  <CategoricalPredictor name="V195_2$" value="1322" coefficient="-9.75716" />
+  <CategoricalPredictor name="V195_2$" value="13227" coefficient="-8.58051" />
+  <CategoricalPredictor name="V195_2$" value="132270" coefficient="-7.09967" />
+  <CategoricalPredictor name="V195_2$" value="1323" coefficient="-6.56424" />
+  <CategoricalPredictor name="V195_2$" value="1653" coefficient="-7.2231" />
+  <CategoricalPredictor name="V195_2$" value="16534" coefficient="-6.78179" />
+  <CategoricalPredictor name="V195_2$" value="1654" coefficient="-5.60376" />
+  <CategoricalPredictor name="V195_2$" value="1819" coefficient="-6.95894" />
+  <CategoricalPredictor name="V195_2$" value="18755" coefficient="-6.33607" />
+  <CategoricalPredictor name="V195_2$" value="18828" coefficient="-6.86033" />
+  <CategoricalPredictor name="V195_2$" value="18832" coefficient="-6.50783" />
+  <CategoricalPredictor name="V195_2$" value="18861" coefficient="-6.15875" />
+  <CategoricalPredictor name="V195_2$" value="1984" coefficient="-11.5045" />
+  <CategoricalPredictor name="V195_2$" value="19841" coefficient="-10.6625" />
+  <CategoricalPredictor name="V195_2$" value="2314" coefficient="-6.10336" />
+  <CategoricalPredictor name="V195_2$" value="2645" coefficient="-7.0582" />
+  <CategoricalPredictor name="V195_2$" value="2646" coefficient="-6.92438" />
+  <CategoricalPredictor name="V195_2$" value="2976" coefficient="-5.86208" />
+  <CategoricalPredictor name="V195_2$" value="33068" coefficient="-7.31297" />
+  <CategoricalPredictor name="V195_2$" value="3307" coefficient="-7.63373" />
+  <CategoricalPredictor name="V195_2$" value="3637" coefficient="-10.0408" />
+  <CategoricalPredictor name="V195_2$" value="3968" coefficient="-9.13065" />
+  <CategoricalPredictor name="V195_2$" value="54719" coefficient="-6.1428" />
+  <CategoricalPredictor name="V195_2$" value="57359" coefficient="-8.44841" />
+  <CategoricalPredictor name="V195_2$" value="615" coefficient="-6.13022" />
+  <CategoricalPredictor name="V195_2$" value="661" coefficient="-8.30805" />
+  <CategoricalPredictor name="V195_2$" value="66135" coefficient="5.38542" />
+  <CategoricalPredictor name="V195_2$" value="6614" coefficient="-9.73991" />
+  <CategoricalPredictor name="V195_2$" value="7" coefficient="-6.50653" />
+  <CategoricalPredictor name="V195_2$" value="827" coefficient="-6.20053" />
+  <CategoricalPredictor name="V195_2$" value="992" coefficient="-7.56651" />
+  <CategoricalPredictor name="V195_2$" value="9920" coefficient="-7.76657" />
+  <NumericPredictor name="V3" coefficient="0.000134405" />
+  <NumericPredictor name="V6" coefficient="-5.97223e-005" />
+  <NumericPredictor name="V7" coefficient="0.00174483" />
+  <NumericPredictor name="V27" coefficient="0.00249222" />
+  <NumericPredictor name="V32" coefficient="-4.71503e-008" />
+  <NumericPredictor name="V46" coefficient="-0.000810354" />
+  <NumericPredictor name="V47" coefficient="0.00123868" />
+  <NumericPredictor name="V10" coefficient="-1.90628e-008" />
+  <NumericPredictor name="V19" coefficient="-6.13789e-008" />
+  <NumericPredictor name="V20" coefficient="1.56943e-008" />
+  <NumericPredictor name="V22" coefficient="-1.47603e-007" />
+  <NumericPredictor name="V29" coefficient="1.2317e-006" />
+  <NumericPredictor name="V30" coefficient="-3.50681e-007" />
+  <NumericPredictor name="V63" coefficient="8.48889e-008" />
+  <NumericPredictor name="V100" coefficient="-2.20291e-006" />
+  <NumericPredictor name="V101" coefficient="-3.15503e-006" />
+  <NumericPredictor name="V102" coefficient="-8.29035e-006" />
+  <NumericPredictor name="V103" coefficient="2.17216e-009" />
+  <NumericPredictor name="V104" coefficient="-1.06085e-007" />
+  <NumericPredictor name="V121" coefficient="1.1649e-007" />
+  <NumericPredictor name="V133" coefficient="-1.43401e-007" />
+  <NumericPredictor name="V175" coefficient="-1.6308" />
+  <NumericPredictor name="V180" coefficient="0.0247841" />
+  <NumericPredictor name="V9_2" coefficient="-0.00594668" />
+  <NumericPredictor name="V45_2" coefficient="0.00771881" />
+  </RegressionTable>
+
+  </RegressionModel>
+
+  </PMML>
