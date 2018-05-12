@@ -1,5 +1,6 @@
 package com.biantech.jpmml.parser;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
@@ -29,21 +30,20 @@ public class PmmlInvoker {
 		try {
 			if (pmmlFileName != null) {
 				is = PmmlInvoker.class.getClassLoader().getResourceAsStream(pmmlFileName);
+				if(is==null){
+					is = new FileInputStream(pmmlFileName);
+				}
 				pmml = PMMLUtil.unmarshal(is);
 			}
-			try {
-				is.close();
-			} catch (IOException localIOException) {
-			}
 			this.modelEvaluator = ModelEvaluatorFactory.newInstance().newModelEvaluator(pmml);
-		} catch (SAXException e) {
-			pmml = null;
-		} catch (JAXBException e) {
-			pmml = null;
+		} catch (Exception e) {
+			e.printStackTrace();
 		} finally {
 			try {
-				is.close();
-			} catch (IOException localIOException3) {
+				if(is!=null)
+					is.close();
+			} catch (Exception localIOException3) {
+				localIOException3.printStackTrace();
 			}
 		}
 		this.modelEvaluator.verify();
@@ -52,12 +52,13 @@ public class PmmlInvoker {
 
 	// 通过输入流读取模型
 	public PmmlInvoker(InputStream is) {
-		PMML pmml = null;
+		PMML pmml;
 		try {
 			pmml = PMMLUtil.unmarshal(is);
 			try {
 				is.close();
 			} catch (IOException localIOException) {
+
 			}
 			this.modelEvaluator = ModelEvaluatorFactory.newInstance().newModelEvaluator(pmml);
 		} catch (SAXException e) {
@@ -72,8 +73,8 @@ public class PmmlInvoker {
 		}
 		this.modelEvaluator.verify();
 	}
-	
-	public Map<FieldName, ?> invoke(Map<FieldName, Object> paramsMap) {
+
+	public Map<FieldName, String> invoke(Map<FieldName, String> paramsMap) {
 		return this.modelEvaluator.evaluate(paramsMap);
 	}
 }

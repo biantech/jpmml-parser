@@ -3,6 +3,7 @@
 *.iws
 *.iml
 *.ipr
+*.jar
 /target
 /mvnw.cmd
 /mvnw

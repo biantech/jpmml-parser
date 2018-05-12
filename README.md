@@ -5,6 +5,6 @@
   会在target 目录下生成 pmmlParser-1.jar.<br/>
   把jar copy 到 根目录下,就可以运行命令进行执行了.
 - 调用方式：
-  java -jar pmml-parser-1.jar [pmml file] [model input args] <br/>
+  java -jar jpmml-parser-1-jar-with-dependencies.jar [pmml file] [model input args] <br/>
 - example：
-  java -jar pmml-parser-1.jar model_rf.pmml ir-data.csv
+  java -jar jpmml-parser-1-jar-with-dependencies.jar model_rf.pmml ir-data.csv
