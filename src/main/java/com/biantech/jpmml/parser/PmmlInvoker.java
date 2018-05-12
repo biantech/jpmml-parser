@@ -4,25 +4,20 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
-
 import javax.xml.bind.JAXBException;
-
 import org.dmg.pmml.FieldName;
 import org.dmg.pmml.PMML;
 import org.jpmml.evaluator.ModelEvaluator;
 import org.jpmml.evaluator.ModelEvaluatorFactory;
 import org.jpmml.model.PMMLUtil;
 import org.xml.sax.SAXException;
-
 /**
  * 读取pmml 获取模型
- * 
  * @author biantech
  *
  */
 public class PmmlInvoker {
 	private ModelEvaluator modelEvaluator;
-
 	// 通过文件读取模型
 	public PmmlInvoker(String pmmlFileName) {
 		PMML pmml = null;
