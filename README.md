@@ -7,4 +7,4 @@
 - 调用方式：
   java -jar jpmml-parser-1-jar-with-dependencies.jar [pmml file] [model input args] <br/>
 - example：
-  java -jar jpmml-parser-1-jar-with-dependencies.jar model_rf.pmml ir-data.csv
+  java -jar jpmml-parser-1-jar-with-dependencies.jar demo-model.pmml demo-data.csv
