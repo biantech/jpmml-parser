@@ -13,6 +13,7 @@
        <log4j2.version>2.8.2</log4j2.version>
        <maven.compiler.source>1.8</maven.compiler.source>
        <maven.compiler.target>1.8</maven.compiler.target>
+       <lang3.version>3.8</lang3.version>
    </properties>
    <dependencies>
      <dependency>
@@ -40,6 +41,11 @@
            <groupId>org.apache.logging.log4j</groupId>
            <artifactId>log4j-slf4j-impl</artifactId>
            <version>${log4j2.version}</version>
+       </dependency>
+       <dependency>
+           <groupId>org.apache.commons</groupId>
+           <artifactId>commons-lang3</artifactId>
+           <version>${lang3.version}</version>
        </dependency>
    </dependencies>
     <build>
