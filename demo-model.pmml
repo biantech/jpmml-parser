@@ -25,7 +25,7 @@
    <MiningField name="Petal.Width" usageType="active"/>
   </MiningSchema>
   <Output>
-   <OutputField name="Predicted_Species" feature="predictedValue"/>
+   <OutputField name="Predicted_Species" feature="predictedValue" dataType="double" />
    <OutputField name="Probability_setosa" optype="continuous" dataType="double" feature="probability" value="setosa"/>
    <OutputField name="Probability_versicolor" optype="continuous" dataType="double" feature="probability" value="versicolor"/>
    <OutputField name="Probability_virginica" optype="continuous" dataType="double" feature="probability" value="virginica"/>

@@ -28,10 +28,9 @@ public class PmmlCalc {
         PmmlInvoker invoker = new PmmlInvoker();
         //invoker.initModelEvaluator(pmmlPath,true);
         ModelEvaluator evaluator = invoker.initModelEvaluator(pmmlPath,true);
-        //List<Map<FieldName, String>> paramList = readInParams(modelArgsFilePath);
         List<HashMap<FieldName, String>> paramList = PmmlParserUtils.readInParams(modelArgsFilePath,utf8,evaluator);
         int lineNum = 0;  //当前处理行数
-        File file = new File("result.txt");
+        //File file = new File("result.txt");
         for(Map<FieldName, String> param : paramList){
             lineNum++;
             //System.out.println("======当前行： " + lineNum + "=======");
@@ -44,6 +43,6 @@ public class PmmlCalc {
                 logger.info(tempString);
             }
         }
-        logger.info("resultFile="+file.getAbsolutePath());
+        //logger.info("resultFile="+file.getAbsolutePath());
     }
 }
