@@ -1,5 +1,8 @@
 package com.biantech.jpmml.parser.test;
 
+import com.biantech.jpmml.parser.PmmlCalculator;
+import com.biantech.jpmml.parser.PmmlInvoker;
+import com.biantech.jpmml.parser.PmmlParserUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.dmg.pmml.FieldName;
 import org.jpmml.evaluator.ModelEvaluator;

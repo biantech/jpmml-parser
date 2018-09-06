@@ -1,8 +1,9 @@
-import java.util.HashMap;
-import java.util.Map;
-
+package com.biantech.jpmml.parser;
 import org.dmg.pmml.FieldName;
 import org.jpmml.evaluator.ModelEvaluator;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class PmmlCalculator {
 	/**
