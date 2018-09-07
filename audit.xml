@@ -98,7 +98,7 @@
 				invalidValueTreatment="asIs" usageType="predicted" />
 		</MiningSchema>
 		 <Output>
-   <OutputField name="TARGET_Adjusted" feature="predictedValue"/>
+   <OutputField name="TARGET_Adjusted" dataType="double" feature="predictedValue"/>
    <OutputField name="Prob0" optype="continuous" dataType="double" feature="probability" value="0"/>
    <OutputField name="Prob1" optype="continuous" dataType="double" feature="probability" value="1"/>
   </Output>
