@@ -87,17 +87,17 @@ public class PmmlCalcTest {
 					Object fieldValue = entry.getValue();
 					logger.info(fieldName + ":" + fieldValue);
 				}
-				String originalProb1 = paramMap.get(new FieldName(originalKeyName));
-				Object resultProb1 = result.get(new FieldName(resultKeyName));
+				String originalProb1 = paramMap.get(FieldName.create(originalKeyName));
+				Object resultProb1 = result.get(FieldName.create(resultKeyName));
 				if (StringUtils.isNotBlank(originalProb1) && resultProb1 != null) {
 					double tempOriginal = Double.parseDouble(originalProb1);
 					double tempResult = Double.parseDouble(resultProb1.toString());
 					if (Math.abs(tempOriginal - tempResult) > 0.001) {
 						//logger.info("evaluate result errors, origianlProb1=" + originalProb1 + ",resultProb1="+resultProb1 );
-						errors.append(paramMap.get(new FieldName(keyIdName)) + "," + originalProb1 + "," + resultProb1 + "\n");
+						errors.append(paramMap.get( FieldName.create(keyIdName)) + "," + originalProb1 + "," + resultProb1 + "\n");
 					}
 				}
-				stringBuilder.append(paramMap.get(new FieldName(keyIdName)) + "," + resultProb1 + "\n");
+				stringBuilder.append(paramMap.get(FieldName.create(keyIdName)) + "," + resultProb1 + "\n");
 			}catch(Exception ex){
 				logger.error("evaluate exception="+ex.toString());
 				exception = ex;
