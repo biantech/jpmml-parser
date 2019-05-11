@@ -10,5 +10,5 @@
   java -jar jpmml-parser-1-jar-with-dependencies.jar audit.xml audit.csv
   java -jar jpmml-parser-1-jar-with-dependencies.jar demo-model.pmml demo-data.csv
 
-![如果觉得有帮助,请支持一下](https://github.com/biantech/jpmml-parser/blob/master/image/alipay-pic.jpg)
+![如果觉得有帮助,请支持一下](https://github.com/biantech/jpmml-parser/blob/master/image/alipay-pic.png)
 ![如果觉得有帮助,请支持一下](https://github.com/biantech/jpmml-parser/blob/master/image/wechat-pay.png)
