@@ -12,5 +12,4 @@
   
 ![如果觉得有帮助,请支持一下](https://github.com/biantech/jpmml-parser/blob/master/image/alipay-pic.png)
 <br>
-<br>
 ![如果觉得有帮助,请支持一下](https://github.com/biantech/jpmml-parser/blob/master/image/wechat-pay.png)
