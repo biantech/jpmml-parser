@@ -10,7 +10,7 @@
        <java.version>1.8</java.version>
        <jpmml.version>1.4.8</jpmml.version>
        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-       <log4j2.version>2.11.2</log4j2.version>
+       <log4j2.version>2.15.0</log4j2.version>
        <maven.compiler.source>1.8</maven.compiler.source>
        <maven.compiler.target>1.8</maven.compiler.target>
        <lang3.version>3.8.1</lang3.version>
